@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.niu.cs.akash.toonville.MainActivity"
+    android:background="@drawable/bg">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tomImageButton"
+        android:src="@drawable/tom_n_jerry_bw"
+        android:maxWidth="42dp"
+        android:maxHeight="42dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="playTom" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/popeyeImageButton"
+        android:layout_alignBottom="@+id/tomImageButton"
+        android:src="@drawable/popye_bw"
+        android:maxWidth="42dp"
+        android:maxHeight="42dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="playPopeye" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scoobyImageButton"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/tomImageButton"
+        android:layout_alignEnd="@+id/tomImageButton"
+        android:src="@drawable/scooby_doo_bw"
+        android:onClick="playScooby" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/flintImageButton"
+        android:src="@drawable/flintstones_bw"
+        android:layout_alignTop="@+id/scoobyImageButton"
+        android:layout_alignLeft="@+id/popeyeImageButton"
+        android:layout_alignStart="@+id/popeyeImageButton"
+        android:onClick="playFlintstones" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/johnnyImageButton"
+        android:src="@drawable/johnny_bravo_bw"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="playJohnny" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addamsFamilyImageButton"
+        android:src="@drawable/the_addams_family_bw"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/flintImageButton"
+        android:layout_alignStart="@+id/flintImageButton"
+        android:onClick="playAddams" />
+</RelativeLayout>
